@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+.body{
+    background-image: linear-gradient( 135deg, #65FDF0 10%, #1D6FA3 100%);
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+}
+.calculadora-container{
+    max-width: 1024px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.calculadora__title{
+    margin: 0;
+    padding: 2rem;
+    font-family: 'Lobster', cursive;
+    color: #5333ed;
+    text-shadow: 0 0 0.250rem white, 0 0 0.5rem white;
+    font-size: 2.5rem;
+}
+.calculadora__form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%; 
+}
+.calculadora__form-input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.calculadora__form-input{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+.calculadora__form-label{
+    font-size: 1.2rem;
+    color: #5333ed;
+    font-weight: 700;
+    text-shadow: 0 0 0.250rem white;
+}
+.calculadora__form-select{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+}
+.error{
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    display: none;
+}
+.calculadora__form-container-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+
+}
+.calculador__form-buttons{
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #5333ed;
+    color: white;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+.calculador__form-buttons:hover{
+    background-color: white;
+    color: #5333ed;
+}
+.resultado{
+    color: white;
+    background-color: green;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    display: none;
+}
+
+@media (min-width: 854px) {
+    .calculadora__form{
+        width: 50%;
+    }
+    .calculadora__form-input{
+        font-size: 1.2rem;
+    }
+    .calculadora__form-select{
+        font-size: 1.2rem;
+    }
+    .calculadora__form-container-buttons{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .error{
+        font-size: 1.2rem;
+    }
+    .resultado{
+        font-size: 1.5rem;
+    }
+}
