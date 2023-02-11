@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body class="body">
+    <main class="calculadora-container">
+        <h1 class="calculadora__title">Calculadora</h1>
+
+        <form class="calculadora__form" id="formCalculadora">
+            <div class="calculadora__form-input-container">
+                <label for="numero1">Cantidad #1</label>
+                <input type="number" class="calculadora__form-input" id="numero1" placeholder="Número 1">
+            </div>
+
+            <div class="calculadora__form-input-container">
+                <label for="operador">Operador</label>
+                <select id="operador" class="calculadora__form-select">
+                    <option value="" selected>** Seleccionar operador **</option>
+                    <option value="+">Suma ( + )</option>
+                    <option value="-">Resta ( - )</option>
+                    <option value="*">Multiplicación ( * )</option>
+                    <option value="/">División ( / )</option>
+                </select>
+            </div>
+
+            <div class="calculadora__form-input-container">
+                <label for="numero2">Cantidad #2</label>
+                <input type="number" class="calculadora__form-input" id="numero2" placeholder="Número 2">
+            </div>
+
+            <div class="error" id="error"></div>
+            
+            <div class="calculadora__form-container-buttons">
+                <button type="reset" class="calculador__form-buttons">Limpiar</button>
+                <button type="submit" class="calculador__form-buttons">Calcular</button>
+            </div>
+
+            <div class="resultado" id="resultado"></div>
+
+        </form>
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
