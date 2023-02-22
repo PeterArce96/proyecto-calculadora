@@ -61,7 +61,7 @@
     color: white;
     font-weight: 700;
     text-align: center;
-    display: none;
+
 }
 .calculadora__form-container-buttons{
     display: flex;
@@ -94,7 +94,6 @@
     text-align: center;
     overflow: hidden;
     border-radius: 0.5rem;
-    display: none;
 }
 
 @media (min-width: 854px) {
