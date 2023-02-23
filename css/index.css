@@ -40,6 +40,7 @@
     font-size: 1rem;
     border-radius: 0.5rem;
     border: none;
+    outline: none;
 }
 .calculadora__form-label{
     font-size: 1.2rem;
@@ -52,6 +53,7 @@
     border-radius: 0.5rem;
     border: none;
     font-size: 1rem;
+    outline: none;
 }
 .error{
     font-size: 1rem;
